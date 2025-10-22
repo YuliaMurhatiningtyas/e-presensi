@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 123, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Stat Card Styling (Home/index.html) */
+.stat-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.stat-card {
+    /* Menggunakan text-dark dan bg-light karena di dashboard.html */
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    /* Tambahan untuk ikon emoji */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+/* Dashboard Centering (dashboard.html) */
+#qr-section {
+    /* MENENGAHKAN SELURUH KONTEN DI SECTION */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Pusatkan item horizontal */
+    text-align: center;     /* Pusatkan teks di dalamnya */
+    padding: 20px 0;
+}
+
+.qr-box {
+    /* Membuat kotak QR code terlihat jelas dan terpusat */
+    display: inline-block;
+    padding: 15px !important;
+}
+
+#qrcode {
+    /* Div tempat QR Code dimuat */
+    width: 200px;
+    height: 200px;
+    margin: 0; /* Hapus margin agar tidak mengganggu Flexbox */
+}
+
+/* Log Absensi Styling */
+#log-list {
+    list-style: none;
+    padding: 0;
+    color: #000; /* Pastikan teks log terlihat */
+}
+
+#log-list li {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn {
+    /* Tambahkan styling dasar untuk tombol */
+    /* ... */
+}
